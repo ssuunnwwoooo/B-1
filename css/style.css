@@ -1,0 +1,205 @@
+@charset "utf-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+
+body {
+    position: relative;
+    line-height: 1;
+    background: #fff;
+    color: #333;
+}
+
+ul,li,ol {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+
+
+.header {
+    height: 100px;
+    background: #fff;
+}
+
+.header-wrap {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.gnb {
+}
+
+.gnb>ul {
+    display: flex;
+}
+
+.gnb>ul>li {
+    position: relative;
+    padding: 30px 0;
+}
+
+.gnb>ul>li>a {
+    padding: 30px 45px;
+}
+
+
+.gnb>ul>li:hover {
+    background: blue;
+    color: #fff;
+}
+
+.sub {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,0);
+    width: 100%;
+    height: 170px;
+    text-align: center;
+    z-index: 100;
+    background-color: #ffffff;
+    padding: 10px 0;
+    color: #333;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+.sub>li {
+    line-height: 35px;
+}
+
+
+.sub>li:hover {
+    background: blue;
+    color: #fff;
+}
+
+
+.main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.slide {
+    overflow: hidden;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+
+.slide_all {
+    width: 100%;
+}
+
+.slide_all>li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.tab {
+    width: 400px;
+    height: 200px;
+}
+div.tab dl {
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+div.tab dl dt {
+    width: 200px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+div.tab dl dt.on {
+    background-color: lightgray;
+    color: white;
+}
+div.tab dl dd {
+    width: 400px;
+    height: 150px;
+    position:absolute;
+    top: 50px;
+    left: 0;
+}
+div.tab dl dd.hidden {
+    display: none;
+}
+div.tab dl dd ul.notice {
+    width: 400px;
+    height: 150px;
+}
+div.tab dl dd ul.notice li {
+    margin: 10px;
+    list-style: square;
+    list-style-position: inside;
+}
+
+div.tab dl dd ul.gallery {
+    width: 400px;
+    height: 150px;
+}
+div.tab dl dd ul.gallery li {
+    width: 80px;
+    height: 100px;
+    margin-left: 40px ;
+    margin-top: 25px;
+    float: left;
+}
+
+
+.footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-wrap {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+
+}
+
+.ft-right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    line-height: 30px;
+}
+
+.ft-menu {
+    border-bottom: 1px solid #ddd;
+}
